@@ -8,16 +8,15 @@
 int main(void)
 {
 	int num;
-	int comma;
-	int space;
 
-	comma = ',';
-	space = ' ';
 	for (num = '0' ; num <= '9' ; num++)
 	{
 		putchar(num);
-		putchar(comma);
-		putchar(space);
+		if (num != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);

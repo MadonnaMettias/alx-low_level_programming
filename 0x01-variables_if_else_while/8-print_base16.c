@@ -7,11 +7,16 @@
  */
 int main(void)
 {
-	char n;
+	char num;
+	char alph;
 
-	for (n = 97 ; n <= 108 ; n++)
+	for (num = '0' ; num <= '9' ; num++)
 	{
-		putchar(n);
+		putchar(num);
+	}
+	for (alph = 'a' ; alph <= 'f' ; alph++)
+	{
+		putchar(alph);
 	}
 	putchar('\n');
 	return (0);

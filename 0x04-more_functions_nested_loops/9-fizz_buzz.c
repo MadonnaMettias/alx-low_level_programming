@@ -24,8 +24,14 @@ int main(void)
 			printf("Fizz");
 		}
 		else
+		{
 			printf("%d", n);
-	putchar(' ');
+		}
+
+		if (n != 100)
+		{
+			putchar(' ');
+		}
 	}
 
 	putchar('\n');

@@ -36,9 +36,9 @@ char *_strdup(char *str)
 	}
 	copy[n] = '\0';
 
-	if(n == 0)
+	if (copy == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	return (copy);

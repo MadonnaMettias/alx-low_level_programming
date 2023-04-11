@@ -36,5 +36,10 @@ char *_strdup(char *str)
 	}
 	copy[n] = '\0';
 
+	if(n == 0)
+	{
+		return(NULL);
+	}
+
 	return (copy);
 }

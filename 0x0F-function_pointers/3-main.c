@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, result;
+	int a, b, result = 0;
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);

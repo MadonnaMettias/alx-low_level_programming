@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		count++;
-	if (format[count] != '\0')
+	if (format[count] != '\0' && format[count] != ' ')
 		printf(", ");
 	}
 	printf("\n");

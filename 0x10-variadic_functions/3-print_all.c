@@ -10,15 +10,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i;
+	int i, count;
 	char c, *s;
 	float f;
-	const char *arg = format;
 
 	va_start(ap, format);
-	while (*arg != '\0')
+	while (format != NULL && format[count] != '\0')
 	{
-		switch (*arg)
+		switch (format[count])
 		{
 			case 'i':
 			i = va_arg(ap, int);
@@ -43,8 +42,8 @@ void print_all(const char * const format, ...)
 			default:
 			break;
 		}
-		arg++;
-	if (*arg != '\0')
+		count++;
+	if (format[count] != '\0')
 		printf(", ");
 	}
 	printf("\n");

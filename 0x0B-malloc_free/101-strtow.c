@@ -13,7 +13,7 @@ char **strtow(char *str)
 	int len = strlen(str), i = 0, j = 0, count = 0, word_len;
 	char **words;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == '\0' || *str == ' ')
 		return (NULL);
 
 	while (*str == ' ')

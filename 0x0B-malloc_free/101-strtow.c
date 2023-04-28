@@ -21,7 +21,7 @@ char **strtow(char *str)
 	while (str[len - 1] == ' ' && len > 0)
 		str[--len] = '\0';
 
-	words = malloc((len + 1) * (sizeof(char *)));
+	words = malloc((len + 1) * sizeof(char *));
 
 	if (words == NULL)
 		return (NULL);
